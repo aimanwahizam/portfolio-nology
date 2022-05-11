@@ -1,0 +1,14 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 428px) {
+    .technical-skills {
+        @include flexCenter();
+
+        &__title{
+            font-family: $font-primary;
+            color: $color-primary;
+            font-size: $font-medium;
+        }
+    }
+}

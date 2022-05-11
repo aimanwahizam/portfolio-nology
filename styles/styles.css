@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap");
+/*Font attributes*/
+/*Color attributes*/
 @media screen and (max-width: 428px) {
   .header {
     max-width: 100%;
@@ -58,6 +60,19 @@
     color: #170F49;
     font-size: 3rem;
     margin-top: 1.25rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .technical-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .technical-skills__title {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #170F49;
+    font-size: 2rem;
   }
 }
 * {
