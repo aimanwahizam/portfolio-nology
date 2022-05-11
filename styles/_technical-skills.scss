@@ -10,9 +10,7 @@
         border: 1px solid black;
 
         &__title{
-            font-family: $font-primary;
-            color: $color-primary;
-            font-size: $font-medium;
+            @include titleStyling();
         }
 
         &__grid {

@@ -111,11 +111,6 @@
     padding-top: 2rem;
     border: 1px solid black;
   }
-  .my-projects__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: #170F49;
-    font-size: 2rem;
-  }
   .my-projects__card {
     border: 2px solid black;
     width: 100%;
@@ -125,6 +120,14 @@
     border: 2px solid black;
     height: 50%;
     background-color: #E3F6F5;
+  }
+  .my-projects__card--description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 2rem;
   }
   .my-projects__card--subtitle {
     font-family: "Raleway", "Nunito Sans", sans-serif;
@@ -136,6 +139,8 @@
     font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 0.9rem;
     color: #8C9CB1;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .my-projects__card--label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
