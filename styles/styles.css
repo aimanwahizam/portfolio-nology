@@ -97,7 +97,8 @@
   .technical-skills__grid--label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 1rem;
-    opacity: 70%;
+    opacity: 90%;
+    color: #8C9CB1;
   }
 }
 * {
