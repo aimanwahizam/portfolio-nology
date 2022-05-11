@@ -24,6 +24,26 @@
             height: 50%;
             background-color: $color-background;
         }
+
+        &--subtitle {
+            font-family: $font-secondary;
+            color: $color-subtitle;
+            text-transform: uppercase;
+            font-size: $font-small;
+        }
+
+        &--text {
+            font-family: $font-secondary;
+            font-size: $font-small;
+            color: $color-secondary;
+        }
+
+        &--label {
+            font-family: $font-secondary;
+            color: $color-primary;
+            text-transform: uppercase;
+            font-size: $font-small;
+        }
     }
   }
 }

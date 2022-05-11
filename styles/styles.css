@@ -52,7 +52,7 @@
   .home__intro {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #8C9CB1;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .home__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
@@ -97,7 +97,7 @@
   }
   .technical-skills__grid--label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 90%;
     color: #8C9CB1;
   }
@@ -125,6 +125,23 @@
     border: 2px solid black;
     height: 50%;
     background-color: #E3F6F5;
+  }
+  .my-projects__card--subtitle {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #BAE8E8;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .my-projects__card--text {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-size: 0.9rem;
+    color: #8C9CB1;
+  }
+  .my-projects__card--label {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #170F49;
+    text-transform: uppercase;
+    font-size: 0.9rem;
   }
 }
 * {
