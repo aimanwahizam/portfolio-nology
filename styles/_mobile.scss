@@ -34,13 +34,42 @@
 
     &__name {
       font-family: $font-primary;
-      font-size: $font-big;
+      font-size: $font-name;
       margin: 10px;
       color: $color-primary;
     }
 
     &__button {
-      font-size: $font-small;
+      font-size: $font-button;
+    }
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    height: 37rem;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: $color-background;
+
+    &__intro{
+        font-family: $font-secondary;
+        color: $color-secondary;
+        font-size: $font-small;
+    }
+
+    &__title{
+        font-family: $font-primary;
+        color: $color-primary;
+        font-size: $font-big;
+        margin-top: 1.25rem;
+    }
+
+    &__button{
+
     }
   }
 }

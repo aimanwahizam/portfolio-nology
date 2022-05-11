@@ -27,13 +27,36 @@
     right: 3px;
   }
   .header__name {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 1.25rem;
     margin: 10px;
-    color: #E85A4F;
+    color: #170F49;
   }
   .header__button {
     font-size: 0.5rem;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    height: 37rem;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #F7FAFA;
+  }
+  .home__intro {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #8C9CB1;
+    font-size: 1rem;
+  }
+  .home__title {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #170F49;
+    font-size: 3rem;
+    margin-top: 1.25rem;
   }
 }
 * {
