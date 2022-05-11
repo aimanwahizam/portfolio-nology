@@ -68,7 +68,7 @@
     align-items: center;
     height: 37rem;
     margin: 1rem;
-    padding: 2rem;
+    padding-top: 2rem;
     border: 1px solid black;
   }
   .technical-skills__title {
@@ -83,6 +83,21 @@
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
     width: 100%;
+  }
+  .technical-skills__grid--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .technical-skills__grid--image {
+    width: 100px;
+    height: 100px;
+  }
+  .technical-skills__grid--label {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-size: 1rem;
+    opacity: 70%;
   }
 }
 * {

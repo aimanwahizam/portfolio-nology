@@ -8,7 +8,7 @@
         align-items: center;
         height: 37rem;
         margin: 1rem;
-        padding: 2rem;
+        padding-top: 2rem;
         border: 1px solid black;
 
         &__title{
@@ -24,6 +24,21 @@
             grid-template-columns: repeat(3, 1fr);
             height: 100%;
             width: 100%;
+
+            &--item {
+                @include flexCenterColumn();
+            }
+
+            &--image{
+                width: 100px;
+                height: 100px;
+            }
+
+            &--label {
+                font-family: $font-primary;
+                font-size: $font-small;
+                opacity: 70%;
+            }
         }
     }
 }
