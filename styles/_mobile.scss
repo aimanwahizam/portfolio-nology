@@ -1,0 +1,7 @@
+@use "./variables" as *;
+
+@media screen and (max-width: 428px ) {
+    body{
+        height: 5550px;
+    }
+}
