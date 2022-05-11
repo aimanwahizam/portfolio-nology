@@ -1,7 +1,31 @@
 @use "./variables" as *;
 
-@media screen and (max-width: 428px ) {
-    body {
-        height: 5550px;
-    }
+@media screen and (max-width: 428px) {
+  .header {
+      max-width: 100%;
+      height: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0.5rem;
+
+      &__left {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 250px;
+          margin: 10px;
+      }
+
+      &__name {
+          font-family: $font-primary;
+          font-size: $font-big;
+          margin: 10px;
+      }
+
+      &__button {
+        font-size: $font-small;
+      }
+  }
 }
