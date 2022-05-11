@@ -16,9 +16,19 @@
     width: 250px;
     margin: 10px;
   }
+  .header__logo--left {
+    position: relative;
+    top: -4px;
+    right: -3px;
+  }
+  .header__logo--right {
+    position: relative;
+    top: -3.65px;
+    right: 3px;
+  }
   .header__name {
     font-family: "Raleway", "Nunito Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 10px;
   }
   .header__button {

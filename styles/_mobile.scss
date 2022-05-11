@@ -2,30 +2,44 @@
 
 @media screen and (max-width: 428px) {
   .header {
-      max-width: 100%;
-      height: 3rem;
+    max-width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+
+    &__left {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin: 0.5rem;
+      justify-content: flex-start;
+      align-items: center;
+      width: 250px;
+      margin: 10px;
+    }
 
-      &__left {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          width: 250px;
-          margin: 10px;
+    &__logo {
+      &--left {
+        position: relative;
+        top: -4px;
+        right: -3px;
       }
 
-      &__name {
-          font-family: $font-primary;
-          font-size: $font-big;
-          margin: 10px;
+      &--right {
+          position: relative;
+          top: -3.65px;
+          right: 3px;
       }
+    }
 
-      &__button {
-        font-size: $font-small;
-      }
+    &__name {
+      font-family: $font-primary;
+      font-size: $font-big;
+      margin: 10px;
+    }
+
+    &__button {
+      font-size: $font-small;
+    }
   }
 }
