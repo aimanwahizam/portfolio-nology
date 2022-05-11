@@ -1,0 +1,29 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 428px) {
+  .my-projects {
+    @include flexPageDisplay;
+    margin: 1rem;
+    padding-top: 2rem;
+    border: 1px solid black;
+
+    &__title {
+      font-family: $font-primary;
+      color: $color-primary;
+      font-size: $font-medium;
+    }
+
+    &__card {
+        border: 2px solid black;
+        width: 100%;
+        height: 30rem;
+
+        &--preview {
+            border: 2px solid black;
+            height: 50%;
+            background-color: $color-background;
+        }
+    }
+  }
+}

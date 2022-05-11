@@ -1,6 +1,13 @@
 @mixin flexCenterColumn() {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Used to style a page where the title is centered on top of page contents, and all are centered horizontally*/
+@mixin flexPageDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

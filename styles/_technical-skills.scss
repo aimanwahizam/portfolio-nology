@@ -3,9 +3,7 @@
 
 @media screen and (max-width: 428px) {
     .technical-skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexPageDisplay;
         height: 37rem;
         margin: 1rem;
         padding-top: 2rem;
