@@ -19,16 +19,16 @@
     }
 
     &__logo {
+      position: relative;
+
       &--left {
-        position: relative;
         top: -4px;
         right: -3px;
       }
 
       &--right {
-          position: relative;
-          top: -3.65px;
-          right: 3px;
+        top: -3.65px;
+        right: 3px;
       }
     }
 
