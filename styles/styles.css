@@ -3,8 +3,10 @@
 /*Color attributes*/
 @media screen and (max-width: 428px) {
   .header {
-    width: 95vw;
+    width: 97.5vw;
     height: 3rem;
+    /*position: fixed;
+    background-color: $color-background;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,15 +19,15 @@
     width: 60%;
   }
   .header__logo {
-    color: #170F49;
+    color: #1d9089;
     width: 2rem;
-    height: 1.1rem;
+    height: 1.08rem;
     top: 1.3px;
     right: -16px;
     position: relative;
   }
   .header__line {
-    color: #170F49;
+    color: #1d9089;
     position: relative;
     top: 1.5px;
     right: 4px;
@@ -33,14 +35,15 @@
   .header__name {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 1.25rem;
-    color: #170F49;
+    color: #1d9089;
     margin-left: 10px;
   }
   .header__sort {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #170F49;
+    width: 2rem;
+    color: #1d9089;
   }
 }
 @media screen and (max-width: 428px) {
@@ -52,16 +55,16 @@
     height: 37rem;
     margin: 0.75rem;
     padding: 2rem;
-    background-color: #F7FAFA;
+    background-color: #edefe5;
   }
   .home__intro {
     font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #8C9CB1;
+    color: #50a977;
     font-size: 0.9rem;
   }
   .home__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: #170F49;
+    color: #1d9089;
     font-size: 3rem;
     margin-top: 1.25rem;
   }
@@ -78,7 +81,7 @@
   }
   .technical-skills__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: #170F49;
+    color: #1d9089;
     font-size: 2rem;
   }
   .technical-skills__grid {
@@ -94,12 +97,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+  }
+  .technical-skills__logo {
+    font-size: 4rem;
+    color: #1d9089;
   }
   .technical-skills__label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 0.9rem;
     opacity: 90%;
-    color: #8C9CB1;
+    color: #50a977;
   }
 }
 @media screen and (max-width: 428px) {
@@ -113,7 +121,7 @@
   }
   .my-projects__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: #170F49;
+    color: #1d9089;
     font-size: 2rem;
     padding-bottom: 1rem;
   }
@@ -126,7 +134,7 @@
   .card__preview {
     border: 2px solid black;
     height: 50%;
-    background-color: #E3F6F5;
+    background-color: #e5e5b9;
   }
   .card__description {
     display: flex;
@@ -138,19 +146,19 @@
   }
   .card__subtitle {
     font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #BAE8E8;
+    color: #bcca8e;
     text-transform: uppercase;
     font-size: 0.9rem;
   }
   .card__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: #170F49;
+    color: #1d9089;
     font-size: 2rem;
   }
   .card__text {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 0.9rem;
-    color: #8C9CB1;
+    color: #50a977;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -161,7 +169,7 @@
   }
   .card__label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #170F49;
+    color: #1d9089;
     text-transform: uppercase;
     font-size: 0.9rem;
   }

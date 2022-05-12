@@ -23,6 +23,12 @@
 
         &__item {
             @include flexCenterColumn();
+            height: 100%;
+        }
+
+        &__logo {
+            font-size: 4rem;
+            color: $color-primary;
         }
 
         &__label {
