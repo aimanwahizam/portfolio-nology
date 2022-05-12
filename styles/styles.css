@@ -3,20 +3,20 @@
 /*Color attributes*/
 @media screen and (max-width: 428px) {
   .header {
-    width: 100%;
+    width: 95vw;
     height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
   .header__left {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 250px;
-    margin: 10px;
+    width: 60%;
   }
   .header__logo {
     color: #170F49;
@@ -34,11 +34,13 @@
   .header__name {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 1.25rem;
-    margin: 10px;
     color: #170F49;
+    margin-left: 10px;
   }
   .header__button {
     font-size: 0.5rem;
+    max-width: 2rem;
+    max-height: 2rem;
   }
 }
 @media screen and (max-width: 428px) {
@@ -48,7 +50,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 37rem;
-    margin: 1rem;
+    margin: 0.75rem;
     padding: 2rem;
     background-color: #F7FAFA;
   }
@@ -71,7 +73,7 @@
     flex-direction: column;
     align-items: center;
     height: 37rem;
-    margin: 1rem;
+    margin: 0.75rem;
     padding-top: 2rem;
     border: 1px solid black;
   }
@@ -110,7 +112,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: 0.75rem;
     padding-top: 2rem;
     border: 1px solid black;
   }

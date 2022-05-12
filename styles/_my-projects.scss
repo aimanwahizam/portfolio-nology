@@ -4,7 +4,7 @@
 @media screen and (max-width: 428px) {
   .my-projects {
     @include flexPageDisplay;
-    margin: 1rem;
+    margin: 0.75rem;
     padding-top: 2rem;
     border: 1px solid black;
 

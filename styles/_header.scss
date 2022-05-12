@@ -2,20 +2,20 @@
 
 @media screen and (max-width: 428px) {
   .header {
-    width: 100%;
+    width: 95vw;
     height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
     &__left {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 250px;
-      margin: 10px;
+      width: 60%;
     }
 
     &__logo {
@@ -36,12 +36,14 @@
     &__name {
       font-family: $font-primary;
       font-size: $font-name;
-      margin: 10px;
       color: $color-primary;
+      margin-left: 10px;
     }
 
     &__button {
       font-size: $font-button;
+      max-width: 2rem;
+      max-height: 2rem;
     }
   }
 }
