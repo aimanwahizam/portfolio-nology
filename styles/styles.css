@@ -36,10 +36,11 @@
     color: #170F49;
     margin-left: 10px;
   }
-  .header__button {
-    font-size: 0.5rem;
-    max-width: 2rem;
-    max-height: 2rem;
+  .header__sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #170F49;
   }
 }
 @media screen and (max-width: 428px) {
@@ -107,13 +108,14 @@
     flex-direction: column;
     align-items: center;
     margin: 0.75rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border: 1px solid black;
   }
   .my-projects__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #170F49;
     font-size: 2rem;
+    padding-bottom: 1rem;
   }
 
   .card {
@@ -139,6 +141,11 @@
     color: #BAE8E8;
     text-transform: uppercase;
     font-size: 0.9rem;
+  }
+  .card__title {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #170F49;
+    font-size: 2rem;
   }
   .card__text {
     font-family: "Raleway", "Nunito Sans", sans-serif;

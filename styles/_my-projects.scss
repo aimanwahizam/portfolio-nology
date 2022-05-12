@@ -5,11 +5,12 @@
   .my-projects {
     @include flexPageDisplay;
     margin: 0.75rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border: 1px solid black;
 
     &__title {
       @include titleStyling();
+      padding-bottom: 1rem;
     }
   }
 
@@ -36,6 +37,10 @@
       color: $color-subtitle;
       text-transform: uppercase;
       font-size: $font-small;
+    }
+
+    &__title {
+      @include titleStyling();
     }
 
     &__text {

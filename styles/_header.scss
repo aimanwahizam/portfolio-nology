@@ -39,10 +39,11 @@
       margin-left: 10px;
     }
 
-    &__button {
-      font-size: $font-button;
-      max-width: 2rem;
-      max-height: 2rem;
+    &__sort {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-primary;
     }
   }
 }
