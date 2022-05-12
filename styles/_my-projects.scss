@@ -46,6 +46,9 @@
     }
 
     &__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
 
     &__label {
@@ -53,6 +56,20 @@
       color: $color-primary;
       text-transform: uppercase;
       font-size: $font-small;
+    }
+
+    &__code {
+      position: relative;
+
+      &--left {
+        top: -4px;
+        right: -3px;
+      }
+
+      &--right {
+        top: -3.65px;
+        right: 3px;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
 /*Color attributes*/
 @media screen and (max-width: 428px) {
   .header {
-    max-width: 100%;
+    width: 100%;
     height: 3rem;
     display: flex;
     flex-direction: row;
@@ -19,15 +19,17 @@
     margin: 10px;
   }
   .header__logo {
+    color: #170F49;
+    width: 2rem;
+    top: 1.3px;
+    right: -16px;
     position: relative;
   }
-  .header__logo--left {
-    top: -4px;
-    right: -3px;
-  }
-  .header__logo--right {
-    top: -3.65px;
-    right: 3px;
+  .header__line {
+    color: #170F49;
+    position: relative;
+    top: 1.5px;
+    right: 4px;
   }
   .header__name {
     font-family: "Nunito Sans", "Raleway", sans-serif;
@@ -149,11 +151,27 @@
     text-align: justify;
     text-justify: inter-word;
   }
+  .card__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
   .card__label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #170F49;
     text-transform: uppercase;
     font-size: 0.9rem;
+  }
+  .card__code {
+    position: relative;
+  }
+  .card__code--left {
+    top: -4px;
+    right: -3px;
+  }
+  .card__code--right {
+    top: -3.65px;
+    right: 3px;
   }
 }
 * {
