@@ -85,7 +85,6 @@
     font-size: 2rem;
   }
   .technical-skills__grid {
-    border: 2px solid black;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -102,11 +101,13 @@
   .technical-skills__logo {
     font-size: 4rem;
     color: #1d9089;
+    opacity: 0.8;
+    margin-bottom: 0.4rem;
   }
   .technical-skills__label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 0.9rem;
-    opacity: 90%;
+    opacity: 0.6;
     color: #50a977;
   }
 }
@@ -117,7 +118,6 @@
     align-items: center;
     margin: 0.75rem;
     padding-top: 1rem;
-    border: 1px solid black;
   }
   .my-projects__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
@@ -141,8 +141,9 @@
     flex-direction: column;
     align-items: center;
     align-items: flex-start;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+    height: 50%;
   }
   .card__subtitle {
     font-family: "Raleway", "Nunito Sans", sans-serif;
@@ -166,6 +167,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 100%;
   }
   .card__label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
@@ -174,15 +176,14 @@
     font-size: 0.9rem;
   }
   .card__code {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 5rem;
+    margin-right: 3rem;
   }
-  .card__code--left {
-    top: -4px;
-    right: -3px;
-  }
-  .card__code--right {
-    top: -3.65px;
-    right: 3px;
+  .card__icon {
+    color: #1d9089;
   }
 }
 * {
