@@ -117,17 +117,18 @@
     color: #170F49;
     font-size: 2rem;
   }
-  .my-projects__card {
+
+  .card {
     border: 2px solid black;
     width: 100%;
     height: 30rem;
   }
-  .my-projects__card--preview {
+  .card__preview {
     border: 2px solid black;
     height: 50%;
     background-color: #E3F6F5;
   }
-  .my-projects__card--description {
+  .card__description {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,20 +136,20 @@
     justify-content: space-evenly;
     margin-top: 2rem;
   }
-  .my-projects__card__subtitle {
+  .card__subtitle {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #BAE8E8;
     text-transform: uppercase;
     font-size: 0.9rem;
   }
-  .my-projects__card--text {
+  .card__text {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 0.9rem;
     color: #8C9CB1;
     text-align: justify;
     text-justify: inter-word;
   }
-  .my-projects__card--label {
+  .card__label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #170F49;
     text-transform: uppercase;
