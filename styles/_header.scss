@@ -7,8 +7,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 
     &__left {
       display: flex;
@@ -21,6 +19,7 @@
     &__logo {
       color: $color-primary;
       width: 2rem;
+      height: 1.2rem;
       top: 1.3px;
       right: -16px;
       position: relative;

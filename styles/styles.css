@@ -8,8 +8,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
   .header__left {
     display: flex;
@@ -21,6 +19,7 @@
   .header__logo {
     color: #170F49;
     width: 2rem;
+    height: 1.2rem;
     top: 1.3px;
     right: -16px;
     position: relative;
@@ -75,7 +74,6 @@
     height: 37rem;
     margin: 0.75rem;
     padding-top: 2rem;
-    border: 1px solid black;
   }
   .technical-skills__title {
     font-family: "Nunito Sans", "Raleway", sans-serif;
@@ -95,10 +93,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .technical-skills__image {
-    width: 100px;
-    height: 100px;
   }
   .technical-skills__label {
     font-family: "Nunito Sans", "Raleway", sans-serif;

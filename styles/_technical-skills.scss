@@ -7,7 +7,6 @@
         height: 37rem;
         margin: 0.75rem;
         padding-top: 2rem;
-        border: 1px solid black;
 
         &__title{
             @include titleStyling();
@@ -24,11 +23,6 @@
 
         &__item {
             @include flexCenterColumn();
-        }
-
-        &__image{
-            width: 100px;
-            height: 100px;
         }
 
         &__label {
