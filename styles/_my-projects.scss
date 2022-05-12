@@ -50,11 +50,13 @@
       @include justifyText();
     }
 
-    &__links {
+    &__nav {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      width: 100%;
+      justify-content: space-between;
+      width: 70%;
+      padding-right: 30%;
+      margin-bottom: 2rem;
     }
 
     &__label {
@@ -62,14 +64,14 @@
       color: $color-primary;
       text-transform: uppercase;
       font-size: $font-small;
+      margin-right: 0.5rem;
     }
 
-    &__code {
+    &__link {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 5rem;
-      margin-right: 3rem;
+      margin-right: 1rem;
     }
 
     &__icon {

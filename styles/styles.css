@@ -163,24 +163,26 @@
     text-align: justify;
     text-justify: inter-word;
   }
-  .card__links {
+  .card__nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    width: 70%;
+    padding-right: 30%;
+    margin-bottom: 2rem;
   }
   .card__label {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     text-transform: uppercase;
     font-size: 0.9rem;
+    margin-right: 0.5rem;
   }
-  .card__code {
+  .card__link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 5rem;
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
   .card__icon {
     color: #1d9089;
