@@ -20,22 +20,22 @@
             grid-template-columns: repeat(3, 1fr);
             height: 100%;
             width: 100%;
+        }
 
-            &--item {
-                @include flexCenterColumn();
-            }
+        &__item {
+            @include flexCenterColumn();
+        }
 
-            &--image{
-                width: 100px;
-                height: 100px;
-            }
+        &__image{
+            width: 100px;
+            height: 100px;
+        }
 
-            &--label {
-                font-family: $font-primary;
-                font-size: $font-small;
-                opacity: 90%;
-                color: $color-secondary;
-            }
+        &__label {
+            font-family: $font-primary;
+            font-size: $font-small;
+            opacity: 90%;
+            color: $color-secondary;
         }
     }
 }

@@ -86,17 +86,17 @@
     height: 100%;
     width: 100%;
   }
-  .technical-skills__grid--item {
+  .technical-skills__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .technical-skills__grid--image {
+  .technical-skills__image {
     width: 100px;
     height: 100px;
   }
-  .technical-skills__grid--label {
+  .technical-skills__label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 0.9rem;
     opacity: 90%;
