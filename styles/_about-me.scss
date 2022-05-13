@@ -1,6 +1,28 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-.about-me {
-    
+@media screen and (max-width: 428px) {
+    .about-me {
+        @include flexPageDisplay();
+        @include pageDimensions();
+
+        &__title {
+            @include titleStyling();
+        }
+
+        &__picture {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__info {
+            @include justifyText();
+            font-family: $font-secondary;
+            font-size: $font-small;
+            color: $color-secondary;
+            margin-bottom: 1.5rem;
+        }
+    }
 }
