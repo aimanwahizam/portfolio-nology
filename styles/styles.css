@@ -38,7 +38,7 @@
     right: 4px;
   }
   .header__name {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 1.25rem;
     color: #1d9089;
     margin-left: 10px;
@@ -63,17 +63,17 @@ and all are centered horizontally*/
     margin: 0.75rem;
     padding-top: 2rem;
     margin-top: 0;
-    background-color: #edefe5;
+    background-color: #eeefe6;
   }
   .home__intro {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #50a977;
     font-size: 0.9rem;
     padding-left: 2rem;
     padding-right: 1.4rem;
   }
   .home__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     font-size: 3rem;
     margin-top: 1.25rem;
@@ -91,7 +91,7 @@ and all are centered horizontally*/
     padding-top: 2rem;
   }
   .technical-skills__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     font-size: 2rem;
   }
@@ -116,7 +116,7 @@ and all are centered horizontally*/
     margin-bottom: 0.4rem;
   }
   .technical-skills__label {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 0.9rem;
     opacity: 0.6;
     color: #50a977;
@@ -131,7 +131,7 @@ and all are centered horizontally*/
     padding-top: 2rem;
   }
   .my-projects__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -158,18 +158,18 @@ and all are centered horizontally*/
     margin-left: 0.25rem;
   }
   .card__subtitle {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #bcca8e;
     text-transform: uppercase;
     font-size: 0.9rem;
   }
   .card__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     font-size: 2rem;
   }
   .card__text {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 0.9rem;
     color: #50a977;
     text-align: justify;
@@ -184,7 +184,7 @@ and all are centered horizontally*/
     margin-bottom: 2rem;
   }
   .card__label {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #1d9089;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -208,9 +208,10 @@ and all are centered horizontally*/
     height: 37rem;
     margin: 0.75rem;
     padding-top: 2rem;
+    height: auto;
   }
   .about-me__title {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-family: "Raleway", "Nunito Sans", sans-serif;
     color: #1d9089;
     font-size: 2rem;
   }
@@ -219,13 +220,53 @@ and all are centered horizontally*/
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    border-radius: 3.5px;
   }
   .about-me__info {
     text-align: justify;
     text-justify: inter-word;
-    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     font-size: 0.9rem;
     color: #50a977;
     margin-bottom: 1.5rem;
   }
+}
+body {
+  background-color: rgba(238, 239, 230, 0.5960784314);
+}
+
+.footer {
+  background-color: #1d9089;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.footer__circle {
+  border: 2px solid black;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon {
+  color: rgba(238, 239, 230, 0.5960784314);
+}
+.footer__icon--cv {
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  font-weight: 1000;
+}
+.footer__email {
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  color: rgba(238, 239, 230, 0.5960784314);
 }/*# sourceMappingURL=styles.css.map */

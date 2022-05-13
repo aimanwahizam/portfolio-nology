@@ -5,6 +5,7 @@
     .about-me {
         @include flexPageDisplay();
         @include pageDimensions();
+        height: auto;
 
         &__title {
             @include titleStyling();
@@ -15,6 +16,7 @@
             height: auto;
             margin-top: 1rem;
             margin-bottom: 1.5rem;
+            border-radius: 3.5px;
         }
 
         &__info {

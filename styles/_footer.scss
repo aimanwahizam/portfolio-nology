@@ -1,0 +1,37 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.footer {
+    background-color: $color-primary;
+    height: 5rem;
+    @include flexCenterColumn();
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+
+    &__circle {
+        border: 2px solid black;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        @include flexCenterColumn();
+    }
+
+    &__icon {
+        color: $color-body;
+
+        &--cv {
+            font-family: $font-secondary;
+            font-weight: 1000;
+        }
+    }
+
+    &__email {
+        font-family: $font-secondary;
+        color: $color-body;
+    }
+}
