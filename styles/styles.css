@@ -192,7 +192,8 @@ and all are centered horizontally*/
     justify-content: space-between;
     width: 70%;
     padding-right: 30%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
   }
   .card__label {
     font-family: "Nunito Sans", "Raleway", sans-serif;
