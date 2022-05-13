@@ -143,7 +143,6 @@ and all are centered horizontally*/
     margin-top: 1rem;
   }
   .card__preview {
-    border: 2px solid black;
     height: 50%;
     background-color: #e5e5b9;
   }
