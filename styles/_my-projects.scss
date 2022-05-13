@@ -5,7 +5,7 @@
   .my-projects {
     @include flexPageDisplay;
     margin: 0.75rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 
     &__title {
       @include titleStyling();
@@ -76,6 +76,10 @@
 
     &__icon {
       color: $color-primary;
+    }
+
+    &--last {
+      margin-bottom: 10rem;
     }
   }
 }

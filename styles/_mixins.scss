@@ -7,11 +7,18 @@
   align-items: center;
 }
 
-/*Used to style a page where the title is centered on top of page contents, and all are centered horizontally*/
+/*Used to style a page where the title is centered on top of page contents, 
+and all are centered horizontally*/
 @mixin flexPageDisplay() {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@mixin pageDimensions() {
+  height: 37rem;
+  margin: 0.75rem;
+  padding-top: 2rem;
 }
 
 @mixin justifyText() {

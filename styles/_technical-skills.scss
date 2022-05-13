@@ -3,10 +3,8 @@
 
 @media screen and (max-width: 428px) {
     .technical-skills {
-        @include flexPageDisplay;
-        height: 37rem;
-        margin: 0.75rem;
-        padding-top: 2rem;
+        @include flexPageDisplay();
+        @include pageDimensions();
 
         &__title{
             @include titleStyling();

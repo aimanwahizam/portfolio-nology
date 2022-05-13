@@ -1,20 +1,21 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 @media screen and (max-width: 428px) {
   .home {
-    display: flex;
-    flex-direction: column;
+    @include flexPageDisplay();   
     justify-content: space-evenly;
-    align-items: center;
-    height: 37rem;
-    margin: 0.75rem;
-    padding: 2rem;
+    @include pageDimensions();
+    margin-top: 0;
     background-color: $color-home;
 
     &__intro{
         font-family: $font-secondary;
         color: $color-secondary;
         font-size: $font-small;
+        padding-left: 2rem;
+        padding-right: 1.4rem;
+        
     }
 
     &__title{
@@ -22,6 +23,8 @@
         color: $color-primary;
         font-size: $font-big;
         margin-top: 1.25rem;
+        padding-left: 2rem;
+        padding-right: 1.4rem;
     }
   }
 }
