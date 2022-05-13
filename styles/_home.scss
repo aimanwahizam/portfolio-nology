@@ -26,5 +26,18 @@
         padding-left: 2rem;
         padding-right: 1.4rem;
     }
+
+    &__button {
+      background-color: $color-primary;
+      width: 80vw;
+      height: 10vh;
+      font-family: $font-secondary;
+      font-size: $font-home;
+      color: $color-body;
+    }
+
+    &__icon {
+      margin-left: 1rem;
+    }
   }
 }

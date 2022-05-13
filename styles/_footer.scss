@@ -3,7 +3,8 @@
 
 .footer {
     background-color: $color-primary;
-    height: 5rem;
+    height: 5.5rem;
+    padding: 1rem;
     @include flexCenterColumn();
 
     &__logos {
@@ -11,6 +12,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         width: 70%;
+        margin-bottom: 0.75rem;
     }
 
     &__circle {
