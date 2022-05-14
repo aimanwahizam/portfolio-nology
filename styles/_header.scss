@@ -48,12 +48,20 @@
       margin-left: 10px;
     }
 
-    &__sort {
+    &__right {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 2rem;
       color: $color-primary;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__button {
+      display: none;
     }
   }
 }
@@ -101,11 +109,19 @@
       margin-left: 10px;
     }
 
-    &__sort {
+    &__right {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 2rem;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    &__icon {
+      display: none !important;
+    }
+
+    &__link {
+      font-size: $font-small;
+      font-family: $font-secondary;
       color: $color-primary;
     }
   }

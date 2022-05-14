@@ -44,12 +44,18 @@
     color: #1d9089;
     margin-left: 10px;
   }
-  .header__sort {
+  .header__right {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 2rem;
     color: #1d9089;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__button {
+    display: none;
   }
 }
 /*Tablet*/
@@ -90,11 +96,17 @@
     color: #1d9089;
     margin-left: 10px;
   }
-  .header__sort {
+  .header__right {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header__icon {
+    display: none !important;
+  }
+  .header__link {
+    font-size: 0.9rem;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #1d9089;
   }
 }
