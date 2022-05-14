@@ -1,7 +1,47 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+/*Mobile*/
 @media screen and (max-width: 428px) {
+    .technical-skills {
+        @include flexPageDisplay();
+        @include pageDimensions();
+
+        &__title{
+            @include titleStyling();
+        }
+
+        &__grid {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            height: 100%;
+            width: 100%;
+        }
+
+        &__item {
+            @include flexCenterColumn();
+            height: 100%;
+        }
+
+        &__logo {
+            font-size: 4rem;
+            color: $color-primary;
+            opacity: 0.8;
+            margin-bottom: 0.4rem;
+        }
+
+        &__label {
+            font-family: $font-primary;
+            font-size: $font-small;
+            opacity: 0.6;
+            color: $color-secondary;
+        }
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
     .technical-skills {
         @include flexPageDisplay();
         @include pageDimensions();

@@ -1,39 +1,84 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-.footer {
-    background-color: $color-primary;
-    height: 5.5rem;
-    padding: 1rem;
-    @include flexCenterColumn();
-
-    &__logos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 70%;
-        margin-bottom: 0.75rem;
-    }
-
-    &__circle {
-        border: 2px solid black;
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
+/*Mobile*/
+@media screen and (max-width: 428px) {
+    .footer {
+        background-color: $color-primary;
+        height: 5.5rem;
+        padding: 1rem;
         @include flexCenterColumn();
-    }
-
-    &__icon {
-        color: $color-body;
-
-        &--cv {
+    
+        &__logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 55%;
+            margin-bottom: 0.75rem;
+        }
+    
+        &__circle {
+            border: 2px solid black;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            @include flexCenterColumn();
+        }
+    
+        &__icon {
+            color: $color-body;
+    
+            &--cv {
+                font-family: $font-secondary;
+                font-weight: 1000;
+            }
+        }
+    
+        &__email {
             font-family: $font-secondary;
-            font-weight: 1000;
+            color: $color-body;
+            font-size: $font-home;
         }
     }
+}
 
-    &__email {
-        font-family: $font-secondary;
-        color: $color-body;
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+    .footer {
+        background-color: $color-primary;
+        height: 5.5rem;
+        padding: 1rem;
+        @include flexCenterColumn();
+    
+        &__logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 55%;
+            margin-bottom: 0.75rem;
+        }
+    
+        &__circle {
+            border: 2px solid black;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            @include flexCenterColumn();
+        }
+    
+        &__icon {
+            color: $color-body;
+    
+            &--cv {
+                font-family: $font-secondary;
+                font-weight: 1000;
+            }
+        }
+    
+        &__email {
+            font-family: $font-secondary;
+            color: $color-body;
+            font-size: $font-home;
+        }
     }
 }

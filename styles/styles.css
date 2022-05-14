@@ -6,7 +6,54 @@
   margin: 0;
 }
 
+/*Mobile*/
 @media screen and (max-width: 428px) {
+  .header {
+    width: 97.5vw;
+    height: 3rem;
+    /*position: fixed;
+    background-color: $color-background;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+  }
+  .header__logo {
+    color: #1d9089;
+    width: 2rem;
+    height: 1.08rem;
+    top: 1.3px;
+    right: -16px;
+    position: relative;
+  }
+  .header__line {
+    color: #1d9089;
+    position: relative;
+    top: 1.5px;
+    right: 4px;
+  }
+  .header__name {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-size: 1.25rem;
+    color: #1d9089;
+    margin-left: 10px;
+  }
+  .header__sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    color: #1d9089;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
   .header {
     width: 97.5vw;
     height: 3rem;
@@ -53,6 +100,7 @@
 }
 /*Used to style a page where the title is centered on top of page contents, 
 and all are centered horizontally*/
+/*Mobile*/
 @media screen and (max-width: 428px) {
   .home {
     display: flex;
@@ -92,6 +140,47 @@ and all are centered horizontally*/
     margin-left: 1rem;
   }
 }
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 37rem;
+    margin: 0.75rem;
+    padding-top: 2rem;
+    margin-top: 0;
+    background-color: #eeefe6;
+  }
+  .home__intro {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #50a977;
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+  }
+  .home__title {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #1d9089;
+    font-size: 3rem;
+    margin-top: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+  }
+  .home__button {
+    background-color: #1d9089;
+    width: 80vw;
+    height: 10vh;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-size: 1.5rem;
+    color: rgba(238, 239, 230, 0.5960784314);
+  }
+  .home__icon {
+    margin-left: 1rem;
+  }
+}
+/*Mobile*/
 @media screen and (max-width: 428px) {
   .technical-skills {
     display: flex;
@@ -133,6 +222,49 @@ and all are centered horizontally*/
     color: #50a977;
   }
 }
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+  .technical-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 37rem;
+    margin: 0.75rem;
+    padding-top: 2rem;
+  }
+  .technical-skills__title {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #1d9089;
+    font-size: 2rem;
+  }
+  .technical-skills__grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
+  }
+  .technical-skills__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .technical-skills__logo {
+    font-size: 4rem;
+    color: #1d9089;
+    opacity: 0.8;
+    margin-bottom: 0.4rem;
+  }
+  .technical-skills__label {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    color: #50a977;
+  }
+}
+/*Mobile*/
 @media screen and (max-width: 428px) {
   .my-projects {
     display: flex;
@@ -212,7 +344,120 @@ and all are centered horizontally*/
     color: #1d9089;
   }
 }
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+  .my-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.75rem;
+    padding-top: 2rem;
+  }
+  .my-projects__title {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #1d9089;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    height: 30rem;
+    margin-top: 1rem;
+  }
+  .card__preview {
+    height: 50%;
+    background-color: #e5e5b9;
+  }
+  .card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 1rem;
+    height: 50%;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+  }
+  .card__subtitle {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #bcca8e;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .card__title {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #1d9089;
+    font-size: 2rem;
+  }
+  .card__text {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-size: 0.9rem;
+    color: #50a977;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .card__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding-right: 30%;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .card__label {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: #1d9089;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .card__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+  .card__icon {
+    color: #1d9089;
+  }
+}
+/*Mobile*/
 @media screen and (max-width: 428px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 37rem;
+    margin: 0.75rem;
+    padding-top: 2rem;
+    height: auto;
+  }
+  .about-me__title {
+    font-family: "Raleway", "Nunito Sans", sans-serif;
+    color: #1d9089;
+    font-size: 2rem;
+  }
+  .about-me__picture {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3.5px;
+  }
+  .about-me__info {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-size: 0.9rem;
+    color: #50a977;
+    margin-bottom: 1.5rem;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
   .about-me {
     display: flex;
     flex-direction: column;
@@ -247,40 +492,85 @@ body {
   background-color: rgba(238, 239, 230, 0.5960784314);
 }
 
-.footer {
-  background-color: #1d9089;
-  height: 5.5rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/*Mobile*/
+@media screen and (max-width: 428px) {
+  .footer {
+    background-color: #1d9089;
+    height: 5.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 55%;
+    margin-bottom: 0.75rem;
+  }
+  .footer__circle {
+    border: 2px solid black;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__icon {
+    color: rgba(238, 239, 230, 0.5960784314);
+  }
+  .footer__icon--cv {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-weight: 1000;
+  }
+  .footer__email {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: rgba(238, 239, 230, 0.5960784314);
+    font-size: 1.5rem;
+  }
 }
-.footer__logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 70%;
-  margin-bottom: 0.75rem;
-}
-.footer__circle {
-  border: 2px solid black;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer__icon {
-  color: rgba(238, 239, 230, 0.5960784314);
-}
-.footer__icon--cv {
-  font-family: "Nunito Sans", "Raleway", sans-serif;
-  font-weight: 1000;
-}
-.footer__email {
-  font-family: "Nunito Sans", "Raleway", sans-serif;
-  color: rgba(238, 239, 230, 0.5960784314);
+/*Tablet*/
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+  .footer {
+    background-color: #1d9089;
+    height: 5.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 55%;
+    margin-bottom: 0.75rem;
+  }
+  .footer__circle {
+    border: 2px solid black;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__icon {
+    color: rgba(238, 239, 230, 0.5960784314);
+  }
+  .footer__icon--cv {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    font-weight: 1000;
+  }
+  .footer__email {
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    color: rgba(238, 239, 230, 0.5960784314);
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
