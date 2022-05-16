@@ -42,8 +42,8 @@
   }
 }
 
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen (min-width: 1024px) {
   .home {
     @include flexPageDisplay();
     justify-content: space-evenly;
