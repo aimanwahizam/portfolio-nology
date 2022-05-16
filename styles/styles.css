@@ -64,8 +64,8 @@
     display: none;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .header__left {
     display: flex;
     flex-direction: row;
@@ -149,8 +149,8 @@ and all are centered horizontally*/
     margin-left: 1rem;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -231,8 +231,8 @@ and all are centered horizontally*/
     color: #50a977;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .technical-skills {
     display: flex;
     flex-direction: column;
@@ -353,8 +353,8 @@ and all are centered horizontally*/
     color: #1d9089;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .my-projects {
     display: flex;
     flex-direction: column;
@@ -465,8 +465,8 @@ and all are centered horizontally*/
     margin-bottom: 1.5rem;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .about-me {
     display: flex;
     flex-direction: column;
@@ -542,8 +542,8 @@ body {
     font-size: 1.5rem;
   }
 }
-/*Tablet*/
-@media screen and (min-width: 429px) and (max-width: 1024px) {
+/*Desktop*/
+@media screen and (min-width: 1024px) {
   .footer {
     background-color: #1d9089;
     height: 5.5rem;

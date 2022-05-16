@@ -43,7 +43,7 @@
 }
 
 /*Desktop*/
-@media screen (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .footer {
         background-color: $color-primary;
         height: 5.5rem;
