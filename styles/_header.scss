@@ -1,11 +1,11 @@
 @use "./variables" as *;
 
+/*Global*/
 * {
   padding: 0;
   margin: 0;
 }
 
-/*Global*/
 .header {
   width: 96.5vw;
   height: 3rem;
@@ -14,28 +14,36 @@
   justify-content: space-between;
   /*position: fixed;
     background-color: $color-background;*/
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+
+  &__logo {
+    color: $color-primary;
+    width: 2rem;
+    height: 1.08rem;
+    top: 1.3px;
+    right: -16px;
+    position: relative;
+  }
+
+  &__line {
+    color: $color-primary;
+    position: relative;
+    top: 1.5px;
+    right: 4px;
+  }
+
 }
 
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .header {
-    &__left {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 60%;
-    }
-
-    &__logo {
-      color: $color-primary;
-      width: 2rem;
-      height: 1.08rem;
-      top: 1.3px;
-      right: -16px;
-      position: relative;
-    }
-
     &__line {
       color: $color-primary;
       position: relative;
@@ -54,7 +62,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 2rem;
+      width: 50%;
       color: $color-primary;
     }
 
@@ -76,30 +84,6 @@
 /*Desktop*/
 @media screen and (min-width: 1024px) {
   .header {
-    &__left {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 60%;
-    }
-
-    &__logo {
-      color: $color-primary;
-      width: 2rem;
-      height: 1.08rem;
-      top: 1.3px;
-      right: -16px;
-      position: relative;
-    }
-
-    &__line {
-      color: $color-primary;
-      position: relative;
-      top: 1.5px;
-      right: 4px;
-    }
-
     &__name {
       font-family: $font-primary;
       font-size: $font-name;
@@ -110,7 +94,10 @@
     &__right {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      flex-wrap: wrap;
     }
 
     &__icon {
@@ -121,6 +108,18 @@
       font-size: $font-small;
       font-family: $font-secondary;
       color: $color-primary;
+      margin-right: 2rem;
+      position: relative;
+      top: 0.8rem;
+    }
+
+    &__button {
+      position: relative;
+      top: 0.8rem;
+      background-color: $color-body;
+      font-family: $font-secondary;
+      padding: 0.2rem;
+      border-radius: 4px;
     }
   }
 }

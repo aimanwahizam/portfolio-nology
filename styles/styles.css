@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap");
 /*Font attributes*/
 /*Color attributes*/
+/*Global*/
 * {
   padding: 0;
   margin: 0;
 }
 
-/*Global*/
 .header {
   width: 96.5vw;
   height: 3rem;
@@ -16,24 +16,30 @@
   /*position: fixed;
     background-color: $color-background;*/
 }
+.header__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.header__logo {
+  color: #1d9089;
+  width: 2rem;
+  height: 1.08rem;
+  top: 1.3px;
+  right: -16px;
+  position: relative;
+}
+.header__line {
+  color: #1d9089;
+  position: relative;
+  top: 1.5px;
+  right: 4px;
+}
 
 /*Mobile*/
 @media screen and (max-width: 428px) {
-  .header__left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 60%;
-  }
-  .header__logo {
-    color: #1d9089;
-    width: 2rem;
-    height: 1.08rem;
-    top: 1.3px;
-    right: -16px;
-    position: relative;
-  }
   .header__line {
     color: #1d9089;
     position: relative;
@@ -50,7 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
+    width: 50%;
     color: #1d9089;
   }
   .header__link {
@@ -66,27 +72,6 @@
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-  .header__left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 60%;
-  }
-  .header__logo {
-    color: #1d9089;
-    width: 2rem;
-    height: 1.08rem;
-    top: 1.3px;
-    right: -16px;
-    position: relative;
-  }
-  .header__line {
-    color: #1d9089;
-    position: relative;
-    top: 1.5px;
-    right: 4px;
-  }
   .header__name {
     font-family: "Raleway", "Nunito Sans", sans-serif;
     font-size: 1.25rem;
@@ -96,7 +81,10 @@
   .header__right {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
   }
   .header__icon {
     display: none !important;
@@ -105,6 +93,17 @@
     font-size: 0.9rem;
     font-family: "Nunito Sans", "Raleway", sans-serif;
     color: #1d9089;
+    margin-right: 2rem;
+    position: relative;
+    top: 0.8rem;
+  }
+  .header__button {
+    position: relative;
+    top: 0.8rem;
+    background-color: rgba(238, 239, 230, 0.5960784314);
+    font-family: "Nunito Sans", "Raleway", sans-serif;
+    padding: 0.2rem;
+    border-radius: 4px;
   }
 }
 /*Used to style a page where the title is centered on top of page contents, 
