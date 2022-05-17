@@ -39,6 +39,20 @@
     right: 4px;
   }
 
+  &__name {
+    font-family: $font-primary;
+    font-size: $font-name;
+    color: $color-primary;
+    margin-left: 10px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
 }
 
 /*Mobile*/
@@ -47,25 +61,8 @@
     &__left {
       width: 70%;
     }
-    &__line {
-      color: $color-primary;
-      position: relative;
-      top: 1.5px;
-      right: 4px;
-    }
-
-    &__name {
-      font-family: $font-primary;
-      font-size: $font-name;
-      color: $color-primary;
-      margin-left: 10px;
-    }
 
     &__right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
       color: $color-primary;
     }
 
@@ -87,24 +84,9 @@
 /*Desktop*/
 @media screen and (min-width: 1024px) {
   .header {
-    &__name {
-      font-family: $font-primary;
-      font-size: $font-name;
-      color: $color-primary;
-      margin-left: 10px;
-    }
 
     &__right {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
       flex-wrap: wrap;
-    }
-
-    &__icon {
-      display: none !important;
     }
 
     &__link {
@@ -114,6 +96,10 @@
       margin-right: 2rem;
       position: relative;
       top: 0.8rem;
+    }    
+    
+    &__icon {
+      display: none !important;
     }
 
     &__button {

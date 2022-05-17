@@ -1,23 +1,26 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+/*Global*/
+.home {
+  @include flexPageDisplay();
+  justify-content: space-evenly;
+  @include pageDimensions();
+  margin-top: 0;
+  background-color: $color-home;
+
+  &__intro {
+    font-family: $font-secondary;
+    color: $color-secondary;
+    font-size: $font-small;
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+  }
+}
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .home {
-    @include flexPageDisplay();
-    justify-content: space-evenly;
-    @include pageDimensions();
-    margin-top: 0;
-    background-color: $color-home;
-
-    &__intro {
-      font-family: $font-secondary;
-      color: $color-secondary;
-      font-size: $font-small;
-      padding-left: 2rem;
-      padding-right: 1.4rem;
-    }
-
     &__title {
       font-family: $font-primary;
       color: $color-primary;
@@ -44,20 +47,7 @@
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-  .home {
-    @include flexPageDisplay();
-    justify-content: space-evenly;
-    @include pageDimensions();
-    margin-top: 0;
-    background-color: $color-home;
-
-    &__intro {
-      font-family: $font-secondary;
-      color: $color-secondary;
-      font-size: $font-small;
-      padding-left: 2rem;
-      padding-right: 1.4rem;
-    }
+.home {
 
     &__title {
       font-family: $font-primary;
