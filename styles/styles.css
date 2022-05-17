@@ -363,85 +363,57 @@ and all are centered horizontally*/
     height: auto;
   }
 }
+/*Global*/
+.footer {
+  background-color: #1d9089;
+  height: 5.5rem;
+  padding: 1rem;
+}
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 55%;
+  margin-bottom: 0.75rem;
+}
+.footer__circle {
+  border: 2px solid black;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon {
+  color: rgba(238, 239, 230, 0.5960784314);
+}
+.footer__icon--cv {
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  font-weight: 1000;
+}
+.footer__email {
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  color: rgba(238, 239, 230, 0.5960784314);
+  font-size: 1.5rem;
+}
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .footer {
-    background-color: #1d9089;
-    height: 5.5rem;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .footer__logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 55%;
-    margin-bottom: 0.75rem;
-  }
-  .footer__circle {
-    border: 2px solid black;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__icon {
-    color: rgba(238, 239, 230, 0.5960784314);
-  }
-  .footer__icon--cv {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-weight: 1000;
-  }
-  .footer__email {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: rgba(238, 239, 230, 0.5960784314);
-    font-size: 1.5rem;
   }
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
   .footer {
-    background-color: #1d9089;
-    height: 5.5rem;
-    padding: 1rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-  }
-  .footer__logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 55%;
-    margin-bottom: 0.75rem;
-  }
-  .footer__circle {
-    border: 2px solid black;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__icon {
-    color: rgba(238, 239, 230, 0.5960784314);
-  }
-  .footer__icon--cv {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-weight: 1000;
-  }
-  .footer__email {
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    color: rgba(238, 239, 230, 0.5960784314);
-    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

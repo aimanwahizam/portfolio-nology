@@ -1,87 +1,58 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+/*Global*/
+.footer {
+    background-color: $color-primary;
+    height: 5.5rem;
+    padding: 1rem;
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 55%;
+        margin-bottom: 0.75rem;
+    }
+
+    &__circle {
+        border: 2px solid black;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        @include flexCenterColumn();
+    }
+
+    &__icon {
+        color: $color-body;
+
+        &--cv {
+            font-family: $font-secondary;
+            font-weight: 1000;
+        }
+    }
+
+    &__email {
+        font-family: $font-secondary;
+        color: $color-body;
+        font-size: $font-home;
+    }
+}
+
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
     .footer {
-        background-color: $color-primary;
-        height: 5.5rem;
-        padding: 1rem;
         @include flexCenterColumn();
-    
-        &__logos {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 55%;
-            margin-bottom: 0.75rem;
-        }
-    
-        &__circle {
-            border: 2px solid black;
-            height: 2rem;
-            width: 2rem;
-            border-radius: 50%;
-            @include flexCenterColumn();
-        }
-    
-        &__icon {
-            color: $color-body;
-    
-            &--cv {
-                font-family: $font-secondary;
-                font-weight: 1000;
-            }
-        }
-    
-        &__email {
-            font-family: $font-secondary;
-            color: $color-body;
-            font-size: $font-home;
-        }
     }
 }
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
     .footer {
-        background-color: $color-primary;
-        height: 5.5rem;
-        padding: 1rem;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-    
-        &__logos {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 55%;
-            margin-bottom: 0.75rem;
-        }
-    
-        &__circle {
-            border: 2px solid black;
-            height: 2rem;
-            width: 2rem;
-            border-radius: 50%;
-            @include flexCenterColumn();
-        }
-    
-        &__icon {
-            color: $color-body;
-    
-            &--cv {
-                font-family: $font-secondary;
-                font-weight: 1000;
-            }
-        }
-    
-        &__email {
-            font-family: $font-secondary;
-            color: $color-body;
-            font-size: $font-home;
-        }
     }
 }
