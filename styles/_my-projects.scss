@@ -12,6 +12,12 @@
       @include titleStyling();
       padding-bottom: 1rem;
     }
+
+    &__my-projects__content {
+      &--extra {
+        display: none;
+      }
+    }
   }
 
   .card {

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway&display=swap");
 /*Font attributes*/
 /*Color attributes*/
+body {
+  background-color: rgba(238, 239, 230, 0.5960784314);
+}
+
 /*Global*/
 * {
   padding: 0;
@@ -40,6 +44,9 @@
 
 /*Mobile*/
 @media screen and (max-width: 428px) {
+  .header__left {
+    width: 70%;
+  }
   .header__line {
     color: #1d9089;
     position: relative;
@@ -301,6 +308,9 @@ and all are centered horizontally*/
     font-size: 2rem;
     padding-bottom: 1rem;
   }
+  .my-projects__my-projects__content--extra {
+    display: none;
+  }
 
   .card {
     width: 100%;
@@ -516,10 +526,6 @@ and all are centered horizontally*/
     margin-bottom: 1.5rem;
   }
 }
-body {
-  background-color: rgba(238, 239, 230, 0.5960784314);
-}
-
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .footer {
@@ -568,8 +574,8 @@ body {
     height: 5.5rem;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
   }
   .footer__logos {

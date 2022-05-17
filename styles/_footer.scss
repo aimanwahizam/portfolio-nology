@@ -48,7 +48,10 @@
         background-color: $color-primary;
         height: 5.5rem;
         padding: 1rem;
-        @include flexCenterColumn();
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     
         &__logos {
             display: flex;

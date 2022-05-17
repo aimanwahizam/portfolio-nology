@@ -44,6 +44,9 @@
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .header {
+    &__left {
+      width: 70%;
+    }
     &__line {
       color: $color-primary;
       position: relative;
