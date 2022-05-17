@@ -6,7 +6,6 @@
   @include flexPageDisplay();
   justify-content: space-evenly;
   @include pageDimensions();
-  margin-top: 0;
   background-color: $color-home;
 
   &__intro {
@@ -16,59 +15,42 @@
     padding-left: 2rem;
     padding-right: 1.4rem;
   }
+
+  &__title {
+    font-family: $font-primary;
+    color: $color-primary;
+    font-size: $font-big;
+    margin-top: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 1.4rem;
+  }
+
+  &__button {
+    background-color: $color-primary;
+    width: 80vw;
+    height: 10vh;
+    font-family: $font-secondary;
+    font-size: $font-home;
+    color: $color-body;
+  }
+
+  &__icon {
+    margin-left: 1rem;
+  }
 }
 
 /*Mobile*/
 @media screen and (max-width: 428px) {
   .home {
-    &__title {
-      font-family: $font-primary;
-      color: $color-primary;
-      font-size: $font-big;
-      margin-top: 1.25rem;
-      padding-left: 2rem;
-      padding-right: 1.4rem;
-    }
-
-    &__button {
-      background-color: $color-primary;
-      width: 80vw;
-      height: 10vh;
-      font-family: $font-secondary;
-      font-size: $font-home;
-      color: $color-body;
-    }
-
-    &__icon {
-      margin-left: 1rem;
-    }
+    /*Enter tweaks here*/
+    margin-top: 0; // Used to fill empty class
   }
 }
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-.home {
-
-    &__title {
-      font-family: $font-primary;
-      color: $color-primary;
-      font-size: $font-big;
-      margin-top: 1.25rem;
-      padding-left: 2rem;
-      padding-right: 1.4rem;
-    }
-
-    &__button {
-      background-color: $color-primary;
-      width: 80vw;
-      height: 10vh;
-      font-family: $font-secondary;
-      font-size: $font-home;
-      color: $color-body;
-    }
-
-    &__icon {
-      margin-left: 1rem;
-    }
+  .home {
+    /*Enter tweaks here*/
+    margin-top: 0;
   }
 }

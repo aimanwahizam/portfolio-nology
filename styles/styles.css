@@ -109,7 +109,6 @@ and all are centered horizontally*/
   height: 37rem;
   margin: 0.75rem;
   padding-top: 2rem;
-  margin-top: 0;
   background-color: #eeefe6;
 }
 .home__intro {
@@ -119,66 +118,76 @@ and all are centered horizontally*/
   padding-left: 2rem;
   padding-right: 1.4rem;
 }
+.home__title {
+  font-family: "Raleway", "Nunito Sans", sans-serif;
+  color: #1d9089;
+  font-size: 3rem;
+  margin-top: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 1.4rem;
+}
+.home__button {
+  background-color: #1d9089;
+  width: 80vw;
+  height: 10vh;
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(238, 239, 230, 0.5960784314);
+}
+.home__icon {
+  margin-left: 1rem;
+}
 
 /*Mobile*/
 @media screen and (max-width: 428px) {
-  .home__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 3rem;
-    margin-top: 1.25rem;
-    padding-left: 2rem;
-    padding-right: 1.4rem;
-  }
-  .home__button {
-    background-color: #1d9089;
-    width: 80vw;
-    height: 10vh;
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: rgba(238, 239, 230, 0.5960784314);
-  }
-  .home__icon {
-    margin-left: 1rem;
+  .home {
+    /*Enter tweaks here*/
+    margin-top: 0;
   }
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
-  .home__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 3rem;
-    margin-top: 1.25rem;
-    padding-left: 2rem;
-    padding-right: 1.4rem;
-  }
-  .home__button {
-    background-color: #1d9089;
-    width: 80vw;
-    height: 10vh;
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-size: 1.5rem;
-    color: rgba(238, 239, 230, 0.5960784314);
-  }
-  .home__icon {
-    margin-left: 1rem;
+  .home {
+    /*Enter tweaks here*/
+    margin-top: 0;
   }
 }
+/*Global*/
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 37rem;
+  margin: 0.75rem;
+  padding-top: 2rem;
+}
+.technical-skills__title {
+  font-family: "Raleway", "Nunito Sans", sans-serif;
+  color: #1d9089;
+  font-size: 2rem;
+}
+.technical-skills__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.technical-skills__logo {
+  font-size: 4rem;
+  color: #1d9089;
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+}
+.technical-skills__label {
+  font-family: "Raleway", "Nunito Sans", sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  color: #50a977;
+}
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
-  .technical-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 37rem;
-    margin: 0.75rem;
-    padding-top: 2rem;
-  }
-  .technical-skills__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 2rem;
-  }
   .technical-skills__subtitle {
     display: none;
   }
@@ -189,41 +198,13 @@ and all are centered horizontally*/
     height: 100%;
     width: 100%;
   }
-  .technical-skills__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .technical-skills__logo {
-    font-size: 4rem;
-    color: #1d9089;
-    opacity: 0.8;
-    margin-bottom: 0.4rem;
-  }
-  .technical-skills__label {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    font-size: 0.9rem;
-    opacity: 0.6;
-    color: #50a977;
-  }
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
   .technical-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 37rem;
-    margin: 0.75rem;
-    padding-top: 2rem;
     height: 15rem;
   }
   .technical-skills__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 2rem;
     margin-bottom: 2rem;
   }
   .technical-skills__subtitle {
@@ -241,25 +222,6 @@ and all are centered horizontally*/
     justify-content: space-evenly;
     align-items: center;
     width: 95vw;
-  }
-  .technical-skills__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .technical-skills__logo {
-    font-size: 4rem;
-    color: #1d9089;
-    opacity: 0.8;
-    margin-bottom: 0.4rem;
-  }
-  .technical-skills__label {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    font-size: 0.9rem;
-    opacity: 0.6;
-    color: #50a977;
   }
 }
 /*Mobile*/
