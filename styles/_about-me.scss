@@ -1,60 +1,44 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+/*Global*/
+.about-me {
+  @include flexPageDisplay();
+  @include pageDimensions();
+
+  &__title {
+    @include titleStyling();
+  }
+
+  &__picture {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3.5px;
+  }
+
+  &__info {
+    @include justifyText();
+    font-family: $font-secondary;
+    font-size: $font-small;
+    color: $color-secondary;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
+  /*Enter tweaks here*/
   .about-me {
-    @include flexPageDisplay();
-    @include pageDimensions();
     height: auto;
-
-    &__title {
-      @include titleStyling();
-    }
-
-    &__picture {
-      max-width: 100%;
-      height: auto;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 3.5px;
-    }
-
-    &__info {
-      @include justifyText();
-      font-family: $font-secondary;
-      font-size: $font-small;
-      color: $color-secondary;
-      margin-bottom: 1.5rem;
-    }
   }
 }
 
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+  /*Enter tweaks here*/
   .about-me {
-    @include flexPageDisplay();
-    @include pageDimensions();
     height: auto;
-
-    &__title {
-      @include titleStyling();
-    }
-
-    &__picture {
-      max-width: 100%;
-      height: auto;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 3.5px;
-    }
-
-    &__info {
-      @include justifyText();
-      font-family: $font-secondary;
-      font-size: $font-small;
-      color: $color-secondary;
-      margin-bottom: 1.5rem;
-    }
   }
 }

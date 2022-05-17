@@ -319,68 +319,48 @@ and all are centered horizontally*/
   }
 }
 
+/*Global*/
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 37rem;
+  margin: 0.75rem;
+  padding-top: 2rem;
+}
+.about-me__title {
+  font-family: "Raleway", "Nunito Sans", sans-serif;
+  color: #1d9089;
+  font-size: 2rem;
+}
+.about-me__picture {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 3.5px;
+}
+.about-me__info {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Nunito Sans", "Raleway", sans-serif;
+  font-size: 0.9rem;
+  color: #50a977;
+  margin-bottom: 1.5rem;
+}
+
 /*Mobile*/
 @media screen and (max-width: 428px) {
+  /*Enter tweaks here*/
   .about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 37rem;
-    margin: 0.75rem;
-    padding-top: 2rem;
     height: auto;
-  }
-  .about-me__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 2rem;
-  }
-  .about-me__picture {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 3.5px;
-  }
-  .about-me__info {
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-size: 0.9rem;
-    color: #50a977;
-    margin-bottom: 1.5rem;
   }
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+  /*Enter tweaks here*/
   .about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 37rem;
-    margin: 0.75rem;
-    padding-top: 2rem;
     height: auto;
-  }
-  .about-me__title {
-    font-family: "Raleway", "Nunito Sans", sans-serif;
-    color: #1d9089;
-    font-size: 2rem;
-  }
-  .about-me__picture {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 3.5px;
-  }
-  .about-me__info {
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: "Nunito Sans", "Raleway", sans-serif;
-    font-size: 0.9rem;
-    color: #50a977;
-    margin-bottom: 1.5rem;
   }
 }
 /*Mobile*/
